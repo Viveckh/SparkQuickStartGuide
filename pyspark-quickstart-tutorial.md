@@ -45,6 +45,9 @@ or
 ## To submit Spark program to run in cluster
 `spark-submit --master yarn-client --packages thedependencypackagenameshere path/to/file/pi.py`
 
+## To list and kill running YARN applications
+`yarn application -list` to view running applications
+`yarn application -kill <id>` to kill the application with the given id
 
 ## Some Useful Spark functions to get started
 * sc.parallelize
